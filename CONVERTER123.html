@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1{
+ text-align:center;
+}
+    
+</style>
+
+<title>CONVERTER</title>
+<script language="Javascript">
+function convert()
+{
+var a,b;
+a=parseInt(document.Convertform.forusd.value);
+b=a*76.52
+document.Convertform.forinr.value=b;
+}
+</script>
+</head>
+
+<body>
+<h1>USD to INR Converter</h1>
+<div>
+<form name="Convertform">
+USD (United States Dollar) :<input type="text" name="forusd" required>
+INR (Indian Rupee) :<input type="text" name="forinr">
+<input type="button" value="Convert" onclick="Javascript:convert()";>
+</div>
+</form>
+</body>
+</html>
